@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block content %}
+<div class='container'>
+<div class="jumbotron-fluid text-center mt-3">
+    <h1 class="display-4">Quiz</h1>
+    <<p>{{ question }}</p>
+    
+    <form method='POST'>
+        <div class='form-group'>
+        <input type='text' name='user_answer'>
+            <button class='btn btn-success submit-btn' type='submit' name="submit_btn" value='submit'>Submit</button>
+    </form>
+    </div>
+
+</div>
+</div>
+
+{% endblock %}
